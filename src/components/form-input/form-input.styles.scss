@@ -15,15 +15,16 @@ $main-color: black;
   .form-input {
     background: none;
     background-color: white;
-    color: $sub-color;
+    color: grey;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 100%;
+    width: 75%;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $sub-color;
-    margin: 25px 0;
+    border-bottom: 1px solid grey;
+    margin: 1em 0;
+
 
     &:focus {
       outline: none;

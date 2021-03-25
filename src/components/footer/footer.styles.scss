@@ -1,0 +1,19 @@
+.Footer{
+    margin-top:1em;
+    width:auto; 
+    max-width: 100%;
+    padding: 0 10%;
+    flex: 1;
+    .contact-me{
+        width:100%;
+        max-width: 100%;
+        .group{
+            margin:0;
+        }
+    }
+    h2{
+        text-align: left;
+        width:auto;
+        flex:2;
+    }
+}
