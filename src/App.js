@@ -1,20 +1,20 @@
 import './App.css';
 
+import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
+import StickyFooter from './components/sticky-footer/sticky-footer.component';
+
 
 function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <Header />
       <div className="body">
        
       </div>
-      <div className="spacer"/>
       <Footer />
-      <div className="spacer"/>
+      <StickyFooter />
     </div>
   );
 }

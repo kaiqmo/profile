@@ -4,7 +4,6 @@ import  FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
 
-
 const Footer = () =>{
     
     const [displayName,setdisplayName] = useState('');
@@ -21,21 +20,21 @@ const Footer = () =>{
 
     return (
         <div className="Footer">
-             <form className='contact-me' onSubmit={handleSubmit}>
-                <h2>Manda uma mensagem :D</h2>
+             <form className='contact-me' id="contact-me" onSubmit={handleSubmit}>
+                <h2>Hire Me</h2>
                 <FormInput
                 type='text'
                 name='displayName'
                 value={displayName}
-                onChange={(e) => setdisplayName(e)}
-                label='Nome'
+                onChange={ e => setdisplayName(e.target.value)}
+                label='Name'
                 required
                 />
                 <FormInput
-                type='text'
-                name='email'
+                type='email'
+                name='Email'
                 value={email}
-                onChange={(e) => setEmail(e)}
+                onChange={e => setEmail(e.target.value)}
                 label='Email'
                 required
                 />
@@ -43,15 +42,13 @@ const Footer = () =>{
                 type='text'
                 name='Text'
                 value={Text}
-                onChange={(e)=> setText(e)}
-                label='Texto'
+                onChange={e => setText(e.target.value)}
+                textarea='Message'
+                label='Message'
                 required
                 />
-                <CustomButton type='submit' >Send Message</CustomButton>
+                <CustomButton type='submit'  submit radius15 w100 >Send</CustomButton>
             </form>
-            <div className="media">
-                <h3>Github: /kaiqmo</h3>
-            </div>
         </div>
 
     );

@@ -15,15 +15,25 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    &:center{
+    .center{
       align-self: center;
+    }
+    &.radius15{
+      border-radius: 15px;
+    }
+    &.w100{
+      width:100%;
     }
     &:hover {
       background-color: white;
       color: black;
       border: 1px solid black;
     }
-
+    &.submit{    
+      background-color: #28C7FA;
+      font-size: 26px;
+      color: black;
+    }
     &.google-sign-in{
       background-color:#4285f4;
       color:white;
